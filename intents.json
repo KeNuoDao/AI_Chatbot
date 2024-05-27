@@ -1,0 +1,451 @@
+{
+  "intents": [
+      {
+          "tag": "greeting",
+          "patterns": [
+            "hi", 
+            "how are you", 
+            "is anyone there?", 
+            "hello", 
+            "good day", 
+            "whats up", "hey", 
+            "greetings", 
+            "howdy", 
+            "hey there"
+          ],
+          "responses": [
+            "hello!", 
+            "good to see you again!", 
+            "hi there, how can i help?", 
+            "hey! what's up?", 
+            "greetings! how can i assist you today?"],
+            "context_set": ""
+      },
+      {
+          "tag": "goodbye",
+          "patterns": [
+            "cya", 
+            "see you later", 
+            "goodbye", 
+            "i am leaving", 
+            "have a good day", 
+            "bye", 
+            "cao", 
+            "see ya", 
+            "farewell", 
+            "talk to you later"
+        ],
+          "responses": [
+            "sad to see you go :(", 
+            "talk to you later", 
+            "goodbye!", 
+            "take care!", 
+            "see you soon!"
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "thanks",
+          "patterns": [
+            "thanks", 
+            "thank you", 
+            "that's helpful", 
+            "thanks a lot", 
+            "thank you so much", 
+            "i appreciate it"
+          ],
+          "responses": [
+            "you're welcome!", 
+            "no problem!", 
+            "happy to help!", 
+            "anytime!", 
+            "my pleasure!"
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "programming",
+          "patterns": [
+            "what is programming?", 
+            "what is coding?", 
+            "tell me about programming", 
+            "tell me about coding", 
+            "what is software development?", 
+            "explain programming", 
+            "define coding", 
+            "what does a programmer do?"
+          ],
+          "responses": [
+            "programming, coding or software development, means writing computer code to automate tasks.", 
+            "programming involves creating software to perform specific tasks by writing code.", 
+            "coding is the process of designing and building an executable computer program to accomplish a specific computing result."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "resource",
+          "patterns": [
+            "where can i learn to code?", 
+            "best way to learn to code", 
+            "how can i learn programming", 
+            "good programming resources", 
+            "can you recommend good coding resources?", 
+            "where to start learning coding?", 
+            "coding tutorials", 
+            "programming learning materials"
+          ],
+          "responses": [
+            "check out the neuralnine youtube channel and the python bible series (7 in 1).", 
+            "you can start with freecodecamp, codecademy, or coursera for great coding resources.", 
+            "for beginners, try online platforms like khan academy, edx, and udemy."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "python",
+          "patterns": [
+            "tell me about python", 
+            "what is python?", 
+            "explain python programming", 
+            "why use python?", 
+            "python language"
+          ],
+          "responses": [
+            "python is a popular, high-level programming language known for its readability and versatility.", 
+            "python is great for beginners due to its simple syntax and wide range of applications, from web development to data science.", 
+            "python is used for web development, data analysis, artificial intelligence, and scientific computing."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "machine_learning",
+          "patterns": [
+            "what is machine learning?", 
+            "explain machine learning", 
+            "tell me about machine learning", 
+            "what can machine learning do?", 
+            "machine learning applications"
+          ],
+          "responses": [
+            "machine learning is a branch of artificial intelligence that involves training algorithms to learn from data and make predictions.", 
+            "machine learning enables computers to learn from experience and improve their performance over time without being explicitly programmed.", 
+            "applications of machine learning include image recognition, natural language processing, and predictive analytics."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "guitar",
+          "patterns": [
+            "how to learn guitar?", 
+            "best way to learn guitar", 
+            "guitar tutorials", 
+            "tips for learning guitar", 
+            "guitar resources"
+          ],
+          "responses": [
+            "you can learn guitar by watching youtube tutorials, taking online courses, or using apps like yousician.", 
+            "practice regularly, start with basic chords, and gradually move to more complex songs.", 
+            "try resources like justinguitar, fender play, and guitartricks for structured learning."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "crypto",
+          "patterns": [
+            "what is cryptocurrency?", 
+            "tell me about crypto", 
+            "explain cryptocurrency", 
+            "how to invest in crypto?", 
+            "cryptocurrency basics"
+          ],
+          "responses": [
+            "cryptocurrency is a digital or virtual currency that uses cryptography for security and operates independently of a central bank.", 
+            "popular cryptocurrencies include bitcoin, ethereum, and litecoin.", "to invest in crypto, you can use exchanges like coinbase, binance, or kraken, and always do thorough research before investing."
+          ],
+          "context_set": ""
+      },
+      {
+          "tag": "investing",
+          "patterns": [
+            "how to start investing?", 
+            "investment tips", 
+            "where to invest?", 
+            "investment strategies", 
+            "investing for beginners"
+          ],
+          "responses": [
+            "start investing by researching different asset classes like stocks, bonds, and real estate.", 
+            "consider using robo-advisors like betterment or wealthfront for automated investing.", 
+            "diversify your portfolio to spread risk and consider both short-term and long-term investment strategies."
+          ],
+          "context_set": ""
+      },
+      {
+        "tag": "identity",
+        "patterns": [
+          "what's zakviel?", 
+          "zakviel", 
+          "who are you?", 
+          "what are you", 
+          "what is your name?"
+        ],
+        "responses": [
+          "i am Zakviel, a beta version of assistant made by Dao"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "weather",
+        "patterns": [
+          "what's the weather like?", 
+          "tell me the weather", 
+          "how's the weather?", 
+          "weather forecast", 
+          "current weather", 
+          "is it going to rain today?"
+        ],
+        "responses": [
+          "i'm not equipped to provide real-time weather updates, but you can check a weather website or app for current information.", 
+          "i suggest looking at a weather service like weather.com for accurate forecasts.", 
+          "for real-time weather updates, you can use apps like accuweather or check google weather."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "jokes",
+        "patterns": [
+          "tell me a joke", 
+          "make me laugh", 
+          "do you know any jokes?", 
+          "i want to hear a joke", 
+          "tell me something funny"
+        ],
+        "responses": [
+          "why don't scientists trust atoms? because they make up everything!", 
+          "why did the scarecrow win an award? because he was outstanding in his field!", 
+          "i told my computer i needed a break, and now it won't stop sending me kitkat ads!"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "music_recommendations",
+        "patterns": [
+          "recommend some music", 
+          "what's a good song to listen to?", 
+          "suggest some music", 
+          "i need music recommendations", 
+          "can you recommend a song?"
+        ],
+        "responses": [
+          "if you like rock, you might enjoy queen's 'bohemian rhapsody'.", 
+          "for pop music, try listening to 'blinding lights' by the weeknd.", 
+          "if you're into classical music, beethoven's symphony no. 9 is a great piece."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "movie_recommendations",
+        "patterns": [
+          "recommend a movie", "what's a good movie to watch?", 
+          "suggest some movies", "i need movie recommendations", 
+          "can you recommend a film?"
+        ],
+        "responses": [
+          "if you like action, 'mad max: fury road' is a thrilling ride.", 
+          "for a great comedy, try watching 'the grand budapest hotel'.", 
+          "if you're into sci-fi, 'blade runner 2049' is a fantastic film."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "fitness_tips",
+        "patterns": [
+          "give me some fitness tips", 
+          "how to stay fit?", 
+          "tips for staying healthy", 
+          "best fitness advice", 
+          "fitness recommendations"
+        ],
+        "responses": [
+          "stay consistent with your workouts and mix up your routine to keep things interesting.", 
+          "make sure to balance cardio, strength training, and flexibility exercises.", 
+          "don't forget to stay hydrated and eat a balanced diet."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "travel_tips",
+        "patterns": [
+          "give me some travel tips", "how to travel safely?", 
+          "tips for traveling", 
+          "best travel advice", 
+          "travel recommendations"
+        ],
+        "responses": [
+          "always research your destination before you go, including local customs and important landmarks.", 
+          "pack light and smart, and make sure to have all essential documents with you.",
+           "stay aware of your surroundings and keep your valuables secure."
+          ],
+        "context_set": ""
+      },
+      {
+        "tag": "tech_news",
+        "patterns": [
+          "tell me the latest tech news", 
+          "what's new in technology?", 
+          "tech news updates", 
+          "latest in tech", 
+          "recent technology news"
+        ],
+        "responses": [
+          "for the latest tech news, check out websites like techcrunch, the verge, or wired.", 
+          "you can stay updated with the latest in technology by following blogs and news sites dedicated to tech.", 
+          "for recent updates in technology, visit websites like cnet or gizmodo."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "food_recipes",
+        "patterns": [
+          "can you suggest a recipe?", 
+          "what's a good recipe to try?", 
+          "give me a recipe", 
+          "suggest a recipe", 
+          "i need a cooking idea"
+        ],
+        "responses": [
+          "how about trying a simple pasta carbonara?", 
+          "you could make a delicious chicken stir-fry.", 
+          "for a sweet treat, try baking some chocolate chip cookies."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "workout_routines",
+        "patterns": [
+          "suggest a workout routine", 
+          "what's a good workout?", 
+          "give me a workout plan", 
+          "i need a workout routine", 
+          "recommend a fitness routine"
+        ],
+        "responses": [
+          "try a combination of cardio and strength training, like 30 minutes of running followed by weight lifting.", 
+          "a great routine is 3 sets of 15 reps of squats, lunges, and push-ups.", 
+          "you can do a full-body workout with exercises like planks, burpees, and mountain climbers."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mental_health_tips",
+        "patterns": [
+          "give me some mental health tips", "how to stay mentally healthy?", 
+          "tips for mental wellness", 
+          "best mental health advice", 
+          "mental health recommendations"
+        ],
+        "responses": [
+          "make sure to take regular breaks and practice mindfulness.", 
+          "stay connected with friends and family, and don't hesitate to seek professional help if needed.", 
+          "engage in activities you enjoy and maintain a balanced lifestyle."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "historical_facts",
+        "patterns": [
+          "tell me a historical fact", 
+          "share some history", 
+          "interesting historical facts", 
+          "give me a history lesson", 
+          "what happened in history?"
+        ],
+        "responses": [
+          "did you know the great wall of china is over 13,000 miles long?", 
+          "the first olympic games were held in 776 bc in olympia, greece.", 
+          "in 1969, neil armstrong became the first person to walk on the moon."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "language_learning_tips",
+        "patterns": [
+          "how can i learn a new language?", 
+          "tips for learning languages", 
+          "best way to learn a language", 
+          "language learning advice", 
+          "how to improve language skills"
+        ],
+        "responses": [
+          "practice speaking with native speakers as much as possible.", 
+          "use language learning apps like duolingo, babbel, or rosetta stone.", 
+          "immerse yourself in the language by watching movies, listening to music, and reading books in that language."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "motivation_quotes",
+        "patterns": [
+          "give me a motivational quote", 
+          "i need some motivation", 
+          "share a quote", 
+          "inspire me", 
+          "motivational quotes"
+        ],
+        "responses": [
+          "the only way to do great work is to love what you do. – steve jobs", 
+          "believe you can and you're halfway there. – theodore roosevelt", 
+          "don't watch the clock; do what it does. keep going. – sam levenson"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "fun_facts",
+        "patterns": [
+          "tell me a fun fact", 
+          "share an interesting fact", 
+          "i want to hear a fun fact", 
+          "fun facts", 
+          "interesting facts"
+        ],
+        "responses": [
+          "did you know honey never spoils? archaeologists have found pots of honey in ancient egyptian tombs that are over 3,000 years old and still edible.", 
+          "a single strand of spaghetti is called a 'spaghetto'.", 
+          "bananas are berries, but strawberries aren't."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "science_facts",
+        "patterns": [
+          "tell me a science fact", 
+          "share some science trivia", 
+          "interesting science facts", 
+          "give me a science fact", 
+          "what are some science facts?"
+        ],
+        "responses": [
+          "a day on venus is longer than a year on venus.", 
+          "water expands by about 9% when it freezes.", 
+          "light from the sun takes approximately 8 minutes and 20 seconds to reach earth."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "dao_info",
+        "patterns": [
+          "who is dao?", 
+          "what is dao?", 
+          "dao", 
+          "how is dao", 
+          "who created you?", 
+          "who made you?"
+        ],
+        "responses": [
+          "Dao is the original creator of zakviel"
+        ],
+        "context_set": ""
+    }
+    
+  ]
+}
