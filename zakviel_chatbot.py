@@ -12,10 +12,10 @@ nltk.download('punkt')
 nltk.download('wordnet')
 
 # Load the data files
-intents = json.loads(open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\intents.json").read())
-words = pickle.load(open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\words.pkl", "rb"))
-classes = pickle.load(open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\classes.pkl", "rb"))
-model = tf.keras.models.load_model("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\chatbot_model.h5")
+intents = json.loads(open("intents.json").read())
+words = pickle.load(open("words.pkl", "rb"))
+classes = pickle.load(open("classes.pkl", "rb"))
+model = tf.keras.models.load_model("chatbot_model.h5")
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
@@ -54,7 +54,7 @@ def get_response(intents_list, intents_json):
 
 def update_intents(user_input, correct_response):
     # Load intents
-    with open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\intents.json") as file:
+    with open("intents.json") as file:
         intents = json.load(file)
     # Check if the intent already exists
     for intent in intents["intents"]:
@@ -72,7 +72,7 @@ def update_intents(user_input, correct_response):
 
 def retrain_model():
     # Load the updated intents
-    intents = json.loads(open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\intents.json").read())
+    intents = json.loads(open("intents.json").read())
     
     words = []
     classes = []
@@ -91,8 +91,8 @@ def retrain_model():
     words = sorted(set(words))
     classes = sorted(set(classes))
     
-    pickle.dump(words, open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\words.pkl", "wb"))
-    pickle.dump(classes, open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\classes.pkl", "wb"))
+    pickle.dump(words, open("words.pkl", "wb"))
+    pickle.dump(classes, open("classes.pkl", "wb"))
     
     training = []
     
