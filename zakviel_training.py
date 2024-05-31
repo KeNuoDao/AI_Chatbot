@@ -5,6 +5,9 @@ import numpy as np
 import tensorflow as tf
 import os
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
+
 import nltk
 from nltk.stem import WordNetLemmatizer
 nltk.download('punkt')
@@ -14,7 +17,7 @@ lemmatizer = WordNetLemmatizer()
 
 
 
-intents = json.loads(open("D:\WorkC\OwnAIs\Zakviel\intents.json").read())
+intents = json.loads(open("intents.json").read())
 
 
 
@@ -54,9 +57,9 @@ classes = sorted(set(classes))
 
 
 
-pickle.dump(words, open(r'D:\WorkC\OwnAIs\Zakviel\testing_saves\words.pkl', 'wb'))
+pickle.dump(words, open('words.pkl', 'wb'))
 
-pickle.dump(classes, open(r'D:\WorkC\OwnAIs\Zakviel\testing_saves\classes.pkl', 'wb'))
+pickle.dump(classes, open('classes.pkl', 'wb'))
 
 
 
