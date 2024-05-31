@@ -11,7 +11,6 @@ lemmatizer = WordNetLemmatizer()
 nltk.download('punkt')
 nltk.download('wordnet')
 
-# Load the data files
 intents = json.loads(open("intents.json").read())
 words = pickle.load(open("words.pkl", "rb"))
 classes = pickle.load(open("classes.pkl", "rb"))
@@ -67,7 +66,7 @@ def update_intents(user_input, correct_response):
         new_intent = {"tag": correct_response, "patterns": [user_input], "responses": [correct_response]}
         intents["intents"].append(new_intent)
     # Save updated intents
-    with open("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\intents.json", "w") as file:
+    with open("intents.json", "w") as file:
         json.dump(intents, file, indent=4)
 
 def retrain_model():
@@ -125,7 +124,7 @@ def retrain_model():
     model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
     
     model.fit(np.array(train_x), np.array(train_y), epochs=200, batch_size=5, verbose=1)
-    model.save("D:\\WorkC\\OwnAIs\\Zakviel0.2\\CurrentRunner\\chatbot_model.h5")
+    model.save("chatbot_model.h5")
 
 
 print("Zakviel is running")
