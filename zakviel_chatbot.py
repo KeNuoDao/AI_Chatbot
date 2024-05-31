@@ -7,6 +7,9 @@ import os
 import nltk
 from nltk.stem import WordNetLemmatizer
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
+
 lemmatizer = WordNetLemmatizer()
 nltk.download('punkt')
 nltk.download('wordnet')
